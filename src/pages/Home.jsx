@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel, IconButton, Typography, Button } from "@material-tailwind/react";
 import '../css/home.css'
-import BNS from '../assets/caraousal/BNS.png';
+import BNS from '../assets/caraousal/BNS.jpg';
 import cases from '../assets/caraousal/cases.png';
 import query from '../assets/caraousal/query.png';
 import summary from '../assets/caraousal/summary.png';
@@ -203,7 +203,7 @@ export default function Home() {
                     </div>
 
                     {/* Caption for the current image */}
-                    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white bg-teal-300 text-xl font-semibold">
+                    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white bg-stone-800 opacity-75 text-xl font-semibold">
                         {images[currentIndex].caption}
                     </div>
 
@@ -228,6 +228,8 @@ export default function Home() {
                     </button>
                 </div>
             </section>
+
+            
             <section className="bg-gray-900 text-white">
                 <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
                     <div className="mx-auto max-w-3xl text-center">

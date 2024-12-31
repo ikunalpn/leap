@@ -46,7 +46,7 @@ function NavList() {
 
       <li>
         <NavLink
-          to="/query"
+          to="https://bns-leap.netlify.app/query.html" target='_blank'
           className={({ isActive }) =>
             `block py-2 pr-4 pl-3 duration-200
    ${isActive ? "text-teal-300" : "text-gray-400"}
@@ -126,16 +126,16 @@ function Header() {
     >
       <Navbar className="mx-auto max-w-screen-xl px-6 py-3" style={{ backgroundColor: '#111827' }} >
         <div className="flex items-center justify-between text-white">
-          <div className="flex item-center justify-center">
-          <a className="block text-teal-300 dark:text-teal-300" href="#"> {/* Set text color to teal-300 for visibility */}
-            {/* <span className="sr-only">Home</span> */}
-            <img className='logo-head'
-              src={logo}
-            />
-          </a>
-            <span>LEAP</span>
+          <div className="flex item-center justify-center items-center">
+            <a className="block text-teal-300 dark:text-teal-300" href="#"> {/* Set text color to teal-300 for visibility */}
+              {/* <span className="sr-only">Home</span> */}
+              <img className='logo-head mr-3'
+                src={logo}
+              />
+            </a>
+            <span><b>LEAP</b></span>
           </div>
-          
+
 
           <div className="hidden lg:block">
             <NavList />

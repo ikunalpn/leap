@@ -12,7 +12,7 @@ import {
 import Home from "./pages/Home.jsx";
 import BNS from "./pages/BNS.jsx"
 import About from "./pages/About.jsx";
-import Query from "./pages/Query.jsx";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +20,6 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="bns" element={<BNS />} />
       <Route path="about" element={<About />} />
-      <Route path="query" element={<Query />} />
     </Route>
   )
 );

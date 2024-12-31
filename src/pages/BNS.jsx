@@ -15,7 +15,7 @@ function BNS() {
                                 <div class="flex flex-col h-full items-center text-center">
                                     <div class="relative inline-flex">
                                         <div class="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
-                                        <img class="inline-flex" src="./card-01.png" width="200" height="200" alt="Card 01" />
+                                        <img class="inline-flex" src="./card-01.jpg" width="200" height="200" alt="Card 01" />
                                     </div>
                                     <div class="grow mb-5">
                                         <h2 class="text-xl text-slate-200 font-bold mb-1">Bhartiya Nyay Snahita</h2>
@@ -82,7 +82,7 @@ function BNS() {
             <div className="flex items-center justify-center  bg-[#0F172A]">
                 <a
                     className="group relative inline-block focus:outline-none focus:ring"
-                    href="#"
+                    href="https://bns-leap.netlify.app/" target='blank'
                 >
                     <span
                         className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-teal-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"

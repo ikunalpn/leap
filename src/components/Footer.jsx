@@ -18,9 +18,15 @@ function Footer() {
         <div className="lg:flex lg:items-end lg:justify-between">
           <div>
             <div className="flex justify-center text-teal-300 lg:justify-start dark:text-teal-300"> {/* Change logo color to teal-300 */}
-              <img className='logo-foot'
-                src={logo}
-              />
+              <div className="flex item-center justify-center items-center">
+                <a className="block text-teal-300 dark:text-teal-300 " href="#"> {/* Set text color to teal-300 for visibility */}
+                  {/* <span className="sr-only">Home</span> */}
+                  <img className='logo-head mr-3 logo-foot'
+                    src={logo}
+                  />
+                </a>
+                <span className='text-xl'><b>LEAP</b></span>
+              </div>
             </div>
             <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-300 lg:text-left dark:text-gray-400">
               The Legal Education and Assistance Portal enhances legal literacy by providing seamless access to the <b>Bhartiya Nyay Sanhita</b> , featuring searchable law sections, case inquiries, and an intuitive document summarizer for empowered navigation of the legal landscape.

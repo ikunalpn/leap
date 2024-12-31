@@ -13,10 +13,10 @@ function BNS() {
                                     <div class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
                                 </div>
                                 <div class="flex flex-col h-full items-center text-center">
-                                    <div class="relative inline-flex">
+                                    {/* <div class="relative inline-flex">
                                         <div class="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
                                         <img class="inline-flex" src="./card-01.jpg" width="200" height="200" alt="Card 01" />
-                                    </div>
+                                    </div> */}
                                     <div class="grow mb-5">
                                         <h2 class="text-xl text-slate-200 font-bold mb-1">Bhartiya Nyay Snahita</h2>
                                         <p class="text-sm text-slate-500">The Bhartiya Nyay Sanhita is a pivotal legal framework aimed at modernizing India's criminal justice system by consolidating and updating laws to ensure justice, efficiency, and transparency in legal proceedings.</p>
@@ -36,10 +36,10 @@ function BNS() {
                                     <div class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
                                 </div>
                                 <div class="flex flex-col h-full items-center text-center">
-                                    <div class="relative inline-flex">
+                                    {/* <div class="relative inline-flex">
                                         <div class="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
                                         <img class="inline-flex" src="./card-02.png" width="200" height="200" alt="Card 02" />
-                                    </div>
+                                    </div> */}
                                     <div class="grow mb-5">
                                         <h2 class="text-xl text-slate-200 font-bold mb-1">Bhartiya Nagrik Suraksha Sanhita</h2>
                                         <p class="text-sm text-slate-500">The Bhartiya Nagrik Suraksha Sanhita is a comprehensive legislative framework designed to enhance citizen safety and security in India by addressing various aspects of criminal law and public safety. </p>
@@ -59,10 +59,10 @@ function BNS() {
                                     <div class="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
                                 </div>
                                 <div class="flex flex-col h-full items-center text-center">
-                                    <div class="relative inline-flex">
+                                    {/* <div class="relative inline-flex">
                                         <div class="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
                                         <img class="inline-flex" src="./card-03.png" width="200" height="200" alt="Card 03" />
-                                    </div>
+                                    </div> */}
                                     <div class="grow mb-5">
                                         <h2 class="text-xl text-slate-200 font-bold mb-1">Bharatiya Sakshya Adhiniyam</h2>
                                         <p class="text-sm text-slate-500">The Bharatiya Sakshya Adhiniyam is a significant legislative framework that governs the laws related to the admissibility and evaluation of evidence in Indian courts, ensuring a fair and transparent judicial process.</p>

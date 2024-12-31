@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Carousel, IconButton, Typography, Button } from "@material-tailwind/react";
 import '../css/home.css'
 import BNS from '../assets/caraousal/BNS.jpg';
@@ -229,7 +229,7 @@ export default function Home() {
                 </div>
             </section>
 
-            
+
             <section className="bg-gray-900 text-white">
                 <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
                     <div className="mx-auto max-w-3xl text-center">
@@ -241,11 +241,16 @@ export default function Home() {
                             Explore the Bhartiya Nyay Sanhita with ease through our comprehensive resources, case searches, and document summarization tools.
                         </p>
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
-                            <a className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="#">
+                            {/* <a className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="#">
                                 Get Started
-                            </a>
-                            <a className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" href="#">
-                                Learn More
+                            </a> */}
+                            <a className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" >
+                                <NavLink
+                                    to="/bns"
+
+                                >
+                                    Learn More
+                                </NavLink>
                             </a>
                         </div>
                     </div>
@@ -331,9 +336,9 @@ export default function Home() {
 
 
 
-       
 
-            
+
+
 
 
             {/* <div className="relative font-inter antialiased">
@@ -396,7 +401,7 @@ export default function Home() {
             {/* serach bns button */}
             {/* Base */}
 
-           
+
 
 
 

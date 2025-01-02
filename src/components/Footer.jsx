@@ -81,7 +81,8 @@ function Footer() {
             </li>
             <li>
               <NavLink
-                to="/search-case"
+                to="https://leapindia-search.vercel.app/"
+                target='_blank'
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 
        ${isActive ? "text-teal-300" : "text-gray-400"} 

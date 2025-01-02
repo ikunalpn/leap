@@ -181,82 +181,84 @@ export default function Home() {
                     </div>
                 </div>
             </Carousel> */}
-            <section className="bg-gray-900 relative">
-                <div className="relative h-screen overflow-hidden">
-                    <div className={`absolute w-full h-screen transition-transform duration-500 ${transition === 'slide-out' ? 'translate-x-full' : transition === 'slide-in' ? '-translate-x-full' : 'translate-x-0'}`}>
-                        <img
-                            src={images[currentIndex].src}
-                            alt={`Slide ${currentIndex + 1}`}
-                            className="object-cover w-full h-screen"
-                            key={currentIndex}
-                        />
+            <div style={{backgroundColor:'#111827'}}>
+                <section className="bg-gray-900 relative mx-2 rounded-lg">
+                    <div className="relative h-screen overflow-hidden rounded-3xl">
+                        <div className={`absolute rounded-3xl w-full h-screen transition-transform duration-500 ${transition === 'slide-out' ? 'translate-x-full' : transition === 'slide-in' ? '-translate-x-full' : 'translate-x-0'}`}>
+                            <img
+                                src={images[currentIndex].src}
+                                alt={`Slide ${currentIndex + 1}`}
+                                className="object-cover w-full h-screen rounded-3xl"
+                                key={currentIndex}
+                                
+                            />
+                        </div>
+
+                        {/* Current Image */}
+                        <div className={`absolute rounded-3xl w-full h-screen transition-transform duration-500 ${transition === 'slide-in' ? 'translate-x-0' : 'translate-x-full'}`}>
+                            <img
+                                src={images[currentIndex].src}
+                                alt={`Slide ${currentIndex + 1}`}
+                                className="object-cover w-full h-screen rounded-3xl"
+                                key={currentIndex}
+                            />
+                        </div>
+
+                        {/* Caption for the current image */}
+                        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white bg-stone-800 opacity-75 text-xl font-semibold px-6 py-4 rounded-lg shadow-lg ring-4 ring-white ring-offset-4 ring-offset-stone-800">
+                            {images[currentIndex].caption}
+                        </div>
+
+                        {/* Navigation Buttons */}
+                        <button
+                            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-opacity-90 transition"
+                            onClick={prevSlide}
+                            aria-label="Previous Slide"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L10.83 12l4.58 4.59L14 18l-6-6 6-6z" />
+                            </svg>
+                        </button>
+                        <button
+                            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-opacity-90 transition"
+                            onClick={nextSlide}
+                            aria-label="Next Slide"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.59 7.41L13.17 12 8.59 16.59 10 18l6-6-6-6z" />
+                            </svg>
+                        </button>
                     </div>
-
-                    {/* Current Image */}
-                    <div className={`absolute w-full h-screen transition-transform duration-500 ${transition === 'slide-in' ? 'translate-x-0' : 'translate-x-full'}`}>
-                        <img
-                            src={images[currentIndex].src}
-                            alt={`Slide ${currentIndex + 1}`}
-                            className="object-cover w-full h-screen"
-                            key={currentIndex}
-                        />
-                    </div>
-
-                    {/* Caption for the current image */}
-                    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white bg-stone-800 opacity-75 text-xl font-semibold">
-                        {images[currentIndex].caption}
-                    </div>
-
-                    {/* Navigation Buttons */}
-                    <button
-                        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-opacity-90 transition"
-                        onClick={prevSlide}
-                        aria-label="Previous Slide"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M15.41 7.41L10.83 12l4.58 4.59L14 18l-6-6 6-6z" />
-                        </svg>
-                    </button>
-                    <button
-                        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-opacity-90 transition"
-                        onClick={nextSlide}
-                        aria-label="Next Slide"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8.59 7.41L13.17 12 8.59 16.59 10 18l6-6-6-6z" />
-                        </svg>
-                    </button>
-                </div>
-            </section>
+                </section>
 
 
-            <section className="bg-gray-900 text-white">
-                <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-                    <div className="mx-auto max-w-3xl text-center">
-                        <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent ">
-                            Empower Your Legal Knowledge.
-                            <span className="sm:block"> Navigate the Law Confidently. </span>
-                        </h1>
-                        <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-                            Explore the Bhartiya Nyay Sanhita with ease through our comprehensive resources, case searches, and document summarization tools.
-                        </p>
-                        <div className="mt-8 flex flex-wrap justify-center gap-4">
-                            {/* <a className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="#">
+                <section className="bg-gray-900 text-white">
+                    <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+                        <div className="mx-auto max-w-3xl text-center">
+                            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent ">
+                                Empower Your Legal Knowledge.
+                                <span className="sm:block"> Navigate the Law Confidently. </span>
+                            </h1>
+                            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+                                Explore the Bhartiya Nyay Sanhita with ease through our comprehensive resources, case searches, and document summarization tools.
+                            </p>
+                            <div className="mt-8 flex flex-wrap justify-center gap-4">
+                                {/* <a className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="#">
                                 Get Started
                             </a> */}
-                            <a className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" >
-                                <NavLink
-                                    to="/bns"
+                                <a className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" >
+                                    <NavLink
+                                        to="/bns"
 
-                                >
-                                    Learn More
-                                </NavLink>
-                            </a>
+                                    >
+                                        Learn More
+                                    </NavLink>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
+                </section>
+            </div>
 
             {/* Cards */}
 

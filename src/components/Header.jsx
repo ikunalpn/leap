@@ -60,7 +60,8 @@ function NavList() {
       </li>
       <li>
         <NavLink
-          to="/search-case"
+          to="https://leapindia-search.vercel.app/"
+          target='_blank'
           className={({ isActive }) =>
             `block py-2 pr-4 pl-3 duration-200
    ${isActive ? "text-teal-300" : "text-gray-400"}
@@ -121,7 +122,7 @@ function Header() {
   return (
     <div
       style={{ backgroundColor: '#111827', padding: '8px' }}
-      className="relative shadow-lg shadow-white/30"
+      className="relative shadow-lg "
       id='leap-nav'
     >
       <Navbar className="mx-auto max-w-screen-xl px-6 py-3" style={{ backgroundColor: '#111827' }} >

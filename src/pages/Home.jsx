@@ -182,7 +182,7 @@ export default function Home() {
                 </div>
             </Carousel> */}
             <div style={{backgroundColor:'#111827'}}>
-                <section className="bg-gray-900 relative mx-2 rounded-lg">
+                <section className="bg-gray-900 relative mx-2 rounded-lg slide-in">
                     <div className="relative h-screen overflow-hidden rounded-3xl">
                         <div className={`absolute rounded-3xl w-full h-screen transition-transform duration-500 ${transition === 'slide-out' ? 'translate-x-full' : transition === 'slide-in' ? '-translate-x-full' : 'translate-x-0'}`}>
                             <img
@@ -235,9 +235,11 @@ export default function Home() {
                 <section className="bg-gray-900 text-white">
                     <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
                         <div className="mx-auto max-w-3xl text-center">
-                            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent ">
+                            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent 
+                            animate-typing overflow-hidden whitespace-nowrap border-r-3 border-r-white pr-5
+                            ">
                                 Empower Your Legal Knowledge.
-                                <span className="sm:block"> Navigate the Law Confidently. </span>
+                                <span className="sm:block animate-typing overflow-hidden whitespace-nowrap border-r-3 border-r-white pr-5"> Navigate the Law Confidently. </span>
                             </h1>
                             <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
                                 Explore the Bhartiya Nyay Sanhita with ease through our comprehensive resources, case searches, and document summarization tools.

@@ -1,0 +1,14 @@
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(20px); /* Initial position below */
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        transform: translateY(0); /* Final position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.slide-in {
+    animation: slideInFromBottom 0.5s ease-out forwards; /* Animation properties, adjust duration if needed */
+}

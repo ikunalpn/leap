@@ -4,7 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 import '../css/footer.css'
 function Footer() {
   return (
-    <footer className="bg-gray-900 dark:bg-gray-900"> {/* Set background to black */}
+    <footer> {/* Set background to black */}
+    <div className='bg-gray-900 dark:bg-gray-900'>
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
           <a className="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4 dark:bg-gray-700 dark:text-teal-300 dark:hover:bg-gray-600" href="#leap-nav">
@@ -15,10 +16,10 @@ function Footer() {
           </a>
         </div>
 
-        <div className="lg:flex lg:items-end lg:justify-between">
-          <div>
+        <div className="lg:flex lg:items-end lg:justify-between ">
+          <div className=''>
             <div className="flex justify-center text-teal-300 lg:justify-start dark:text-teal-300"> {/* Change logo color to teal-300 */}
-              <div className="flex item-center justify-center items-center">
+              <div className="flex item-center justify-center items-">
                 <a className="block text-teal-300 dark:text-teal-300 " href="#"> {/* Set text color to teal-300 for visibility */}
                   {/* <span className="sr-only">Home</span> */}
                   <img className='logo-head mr-3 logo-foot'
@@ -129,6 +130,7 @@ function Footer() {
         <p className="mt-12 text-center text-sm text-gray-400 lg:text-right dark:text-gray-400">
           Copyright &copy; 2025. All rights reserved.
         </p>
+      </div>
       </div>
     </footer>
 

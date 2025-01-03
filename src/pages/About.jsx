@@ -134,7 +134,7 @@ function About() {
                     <div className='flex justify-center items-center mb-5'>
                         <h3
                             // className="text-white text-3xl font-semibold sm:text-4xl" 
-                            className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
+                            className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl slide-inn">
                             Contact Us
                         </h3>
 
@@ -200,7 +200,7 @@ function About() {
                             </button>
                         </form>
                     </div> */}
-                    <div className="bg-gradient-to-r from-blue-300 to-purple-500 h-screen flex justify-center items-center rounded-xl">
+                    <div className="bg-gradient-to-r from-blue-300 to-purple-500 h-screen flex justify-center items-center rounded-xl slide-inn">
                         <div className="py-8 px-6 bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-xl backdrop-filter w-2/6"> {/* Changed max-w-md to max-w-xl */}
 
                             <h1 className="text-xl font-extrabold text-center text-gray-800 mb-5">Fill below detail to Contact us</h1>

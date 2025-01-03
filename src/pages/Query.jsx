@@ -100,6 +100,7 @@ function Query() {
         </form>
       </div>
 
+
       {/* CSS for the spinner */}
       <style>{`
         .spinner {

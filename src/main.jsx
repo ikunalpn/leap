@@ -21,7 +21,7 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="bns" element={<BNS />} />
       <Route path="about" element={<About />} />
-      <Route path="bns-info" element={<BNSInfo />} />
+      <Route path="bnsinfo" element={<BNSInfo />} />
     </Route>
   )
 );

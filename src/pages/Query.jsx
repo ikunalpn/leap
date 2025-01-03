@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-const API_KEY = "AIzaSyCebUHnut7uxYC--dJ79GAAp_j6uzktj4c"
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+// const API_KEY = "AIzaSyCebUHnut7uxYC--dJ79GAAp_j6uzktj4c"
 function Query() {  
 
     const [input, setInput] = useState("");

@@ -58,6 +58,7 @@ function NavList() {
           Query
         </NavLink>
       </li>
+
       <li>
         <NavLink
           to="https://leapindia-search.vercel.app/"
@@ -73,6 +74,7 @@ function NavList() {
           Search Cases
         </NavLink>
       </li>
+
       <li>
         <NavLink
           to="/document-summ"
@@ -87,6 +89,7 @@ function NavList() {
           Document Summarizer
         </NavLink>
       </li>
+      
       <li>
         <NavLink
           to="/about"

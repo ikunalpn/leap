@@ -42,10 +42,70 @@ const TABLE_ROWS = [
 function BNSInfo() {
     return (
         <>
-            <div className='flex-col justify-center items-center p-5' style={{ backgroundColor: '#111827' }}>
+            <div className='flex-col justify-center items-center p-9' style={{ backgroundColor: '#111827' }}>
+
+                <div className='flex-col justify-center items-center m-10 slide-in' style={{ backgroundColor: '#111827' }}>
+                    <div className='flex justify-center items-center my-10'>
+                        <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent ">
+                            Bharatiya Nyaya Sanhita (BNS) 2023 Features
+                        </h1>
+                    </div>
+                    <div className='flex justify-center items-center py-11' >
+                        <div className='flex flex-col sm:flex-row justify-center items-center px-5 space-x-0 sm:space-x-4 space-y-4 sm:space-y-0'>
+                            {/** Container for each card **/}
+
+                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
+                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between ">
+                                    <b>Simplification and Clarity</b>
+                                    <p className="mt-2">
+                                        The BNS aims to simplify the complex legal language of existing laws to make them more understandable to the general public.Provides clear definitions to avoid any ambiguity in legal terms and provisions.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
+                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
+                                    <b>Codification</b>
+                                    <p className="mt-2">
+                                        It aims to consolidate various criminal laws into a single, cohesive code.Incorporates provisions that take into account social, economic, and technological changes in society.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
+                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
+                                    <b>Speedy Justice</b>
+                                    <p className="mt-2">Introduces mechanisms to expedite the trial process for quicker dispensation of justice.Encourages methods like mediation and arbitration to resolve certain types of disputes out of court.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
+                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
+                                    <b>Technological Integration</b>
+                                    <p className="mt-2">
+                                        Allows for the admissibility and authentication of digital evidence.Promotes the use of technology for better case management and tracking.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
+                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
+                                    <b>Modernization</b>
+                                    <p className="mt-2">Addresses modern issues such as cybercrime, financial fraud, and data theft.Includes provisions for dealing with new types of offenses emerging from technological advancements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-                <div style={{ backgroundColor: '#111827', color: 'white' }} className='hidden md:flex justify-center items-center pt-5 slide-in'>
+
+
+                </div>
+                <div style={{ backgroundColor: '#111827', color: 'white' }} className='hidden md:flex justify-center items-center pt-5 slide-inn'>
                     <div className='flex-col m-3 p-2'>
                         <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent ">
                             Bharatiya Nyaya Sanhita (BNS) 2023 repeals Indian Penal Code (IPC) 1860
@@ -101,67 +161,8 @@ function BNSInfo() {
                 </div>
 
 
-                <div className='flex-col justify-center items-center m-10' style={{ backgroundColor: '#111827' }}>
-                    <div className='flex justify-center items-center my-10'>
-                        <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent ">
-                            Bharatiya Nyaya Sanhita (BNS) 2023 Features
-                        </h1>
-                    </div>
-                    <div className='flex justify-center items-center py-5' >
-                        <div className='flex flex-col sm:flex-row justify-center items-center px-5 space-x-0 sm:space-x-4 space-y-4 sm:space-y-0'>
-                            {/** Container for each card **/}
-
-                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
-                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between ">
-                                    <b>Simplification and Clarity</b>
-                                    <p className="mt-2">
-                                        The BNS aims to simplify the complex legal language of existing laws to make them more understandable to the general public.Provides clear definitions to avoid any ambiguity in legal terms and provisions.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
-                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
-                                    <b>Codification</b>
-                                    <p className="mt-2">
-                                        It aims to consolidate various criminal laws into a single, cohesive code.Incorporates provisions that take into account social, economic, and technological changes in society.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
-                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
-                                    <b>Speedy Justice</b>
-                                    <p className="mt-2">Introduces mechanisms to expedite the trial process for quicker dispensation of justice.Encourages methods like mediation and arbitration to resolve certain types of disputes out of court.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
-                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
-                                    <b>Technological Integration</b>
-                                    <p className="mt-2">
-                                        Allows for the admissibility and authentication of digital evidence.Promotes the use of technology for better case management and tracking.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="bg-gradient-to-br from-white/95 via-blue-800 to-white/90 p-1 rounded-lg shadow-lg w-64 h-80 transform transition duration-500 hover:scale-110">
-                                <div className="text-base text-gray-400 bg-gradient-to-br from-[#0d1120] to-[#3a4b8a] p-6 rounded-lg h-full flex flex-col justify-between">
-                                    <b>Modernization</b>
-                                    <p className="mt-2">Addresses modern issues such as cybercrime, financial fraud, and data theft.Includes provisions for dealing with new types of offenses emerging from technological advancements.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
-
-
-                </div>
             </div>
         </>
     );

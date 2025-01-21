@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/bnsinfo.css';
+import '../css/bnssinfo.css';
 import { Card, Typography } from "@material-tailwind/react";
 
 const TABLE_HEAD = ["BHARATIYA NYAYA SANHITA, 2023", "INDIAN PENAL CODE, 1860 "];

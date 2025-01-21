@@ -14,6 +14,8 @@ import BNS from "./pages/BNS.jsx"
 import About from "./pages/About.jsx";
 import BNSInfo from "./pages/BNSInfo.jsx";
 import Query from "./pages/Query.jsx";
+import BNSSInfo from "./pages/BNSSInfo.jsx"
+import BSAInfo from "./pages/BSAInfo.jsx";
 
 
 
@@ -25,7 +27,8 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="bns-info" element={<BNSInfo />} />
       <Route path="query" element={<Query />} />
-
+      <Route path="bnss-info" element={<BNSSInfo />} />
+      <Route path="bsa-info" element={<BSAInfo />} />
     </Route>
   )
 );

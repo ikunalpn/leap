@@ -75,7 +75,7 @@ function NavList() {
         </NavLink>
       </li>
 
-      <li>
+      {/* <li>
         <NavLink
           to="/document-summ"
           className={({ isActive }) =>
@@ -88,7 +88,7 @@ function NavList() {
         >
           Document Summarizer
         </NavLink>
-      </li>
+      </li> */}
       
       <li>
         <NavLink

@@ -95,7 +95,7 @@ function Footer() {
                 Search Cases
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/document-summ"
                 className={({ isActive }) =>
@@ -108,7 +108,7 @@ function Footer() {
               >
                 Document Summarizer
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to="/about"

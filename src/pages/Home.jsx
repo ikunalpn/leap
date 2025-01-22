@@ -7,7 +7,41 @@ import BNS from '../assets/caraousal/BNS.jpg';
 import cases from '../assets/caraousal/cases.png';
 import query from '../assets/caraousal/query.png';
 import summary from '../assets/caraousal/summary.png';
+
+
+// extra 
+import { Stars } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { FiArrowRight } from "react-icons/fi";
+import {
+    useMotionTemplate,
+    useMotionValue,
+    motion,
+    animate,
+} from "framer-motion";
+
+const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
+
+
 export default function Home() {
+
+    // light effect
+    const color = useMotionValue(COLORS_TOP[0]);
+    useEffect(() => {
+        animate(color, COLORS_TOP, {
+            ease: "easeInOut",
+            duration: 10,
+            repeat: Infinity,
+            repeatType: "mirror",
+        });
+    }, []);
+    const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
+    const border = useMotionTemplate`1px solid ${color}`;
+    const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+    const redirectBns = () => {
+        window.location.href = '/bns'; // Redirect to /bns
+    };
+///
 
 
     const images = [
@@ -181,7 +215,7 @@ export default function Home() {
                     </div>
                 </div>
             </Carousel> */}
-            <div style={{backgroundColor:'#111827'}}>
+            <div style={{ backgroundColor: '#111827' }}>
                 <section className="bg-gray-900 relative mx-2 rounded-lg slide-in">
                     <div className="relative h-screen overflow-hidden rounded-3xl">
                         <div className={`absolute rounded-3xl w-full h-screen transition-transform duration-500 ${transition === 'slide-out' ? 'translate-x-full' : transition === 'slide-in' ? '-translate-x-full' : 'translate-x-0'}`}>
@@ -190,7 +224,7 @@ export default function Home() {
                                 alt={`Slide ${currentIndex + 1}`}
                                 className="object-cover w-full h-screen rounded-3xl"
                                 key={currentIndex}
-                                
+
                             />
                         </div>
 
@@ -232,8 +266,8 @@ export default function Home() {
                 </section>
 
 
-                <section className="bg-gray-900 text-white">
-                    <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+                {/* <section className="bg-gray-900 text-white"> */}
+                {/* <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
                         <div className="mx-auto max-w-3xl text-center">
                             <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent 
                             animate-typing overflow-hidden whitespace-nowrap border-r-3 border-r-white pr-5
@@ -248,7 +282,7 @@ export default function Home() {
                                 {/* <a className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="#">
                                 Get Started
                             </a> */}
-                                <a href='/bns' className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" >
+                {/* <a href='/bns' className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" >
                                     <NavLink
                                         to="/bns"
 
@@ -257,9 +291,51 @@ export default function Home() {
                                     </NavLink>
                                 </a>
                             </div>
-                        </div>
+                        </div> */} 
+                {/* </div>
+                </section> */}
+
+                <motion.section
+                    style={{
+                        backgroundImage,
+                    }}
+                    className="relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200 rounded-3xl"
+                >
+                    <div className="relative z-10 flex flex-col items-center">
+                        {/* <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
+                            Beta Now Live!
+                        </span> */}
+                        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
+                        Empower Your Legal Knowledge
+                        </h1>
+                        <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
+                        Explore the Bhartiya Nyay Sanhita with ease through our comprehensive resources, case searches, and document summarization tools.
+                        </p>
+                        <motion.button
+                            style={{
+                                border,
+                                boxShadow,
+                            }}
+                            whileHover={{
+                                scale: 1.015,
+                            }}
+                            whileTap={{
+                                scale: 0.985,
+                            }}
+                            onClick={redirectBns}
+                            className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+                        >
+                            Learn More
+                            <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                        </motion.button>
                     </div>
-                </section>
+
+                    <div className="absolute inset-0 z-0">
+                        <Canvas>
+                            <Stars radius={50} count={2500} factor={4} fade speed={2} />
+                        </Canvas>
+                    </div>
+                </motion.section>
             </div>
 
             {/* Cards */}

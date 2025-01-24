@@ -7,6 +7,7 @@ import BNS from '../assets/caraousal/BNS.jpg';
 import cases from '../assets/caraousal/cases.png';
 import query from '../assets/caraousal/query.png';
 import summary from '../assets/caraousal/summary.png';
+import { useNavigate } from 'react-router-dom';
 
 
 // extra 
@@ -20,10 +21,12 @@ import {
     animate,
 } from "framer-motion";
 
-const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 
 export default function Home() {
+
+    const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
+    const navigate = useNavigate();
 
     // light effect
     const color = useMotionValue(COLORS_TOP[0]);
@@ -41,7 +44,7 @@ export default function Home() {
     const redirectBns = () => {
         window.location.href = '/bns'; // Redirect to /bns
     };
-///
+    ///
 
 
     const images = [
@@ -291,7 +294,7 @@ export default function Home() {
                                     </NavLink>
                                 </a>
                             </div>
-                        </div> */} 
+                        </div> */}
                 {/* </div>
                 </section> */}
 
@@ -306,10 +309,10 @@ export default function Home() {
                             Beta Now Live!
                         </span> */}
                         <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
-                        Empower Your Legal Knowledge
+                            Empower Your Legal Knowledge
                         </h1>
                         <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
-                        Explore the Bhartiya Nyay Sanhita with ease through our comprehensive resources, case searches, and document summarization tools.
+                            Explore the Bhartiya Nyay Sanhita with ease through our comprehensive resources, case searches, and document summarization tools.
                         </p>
                         <motion.button
                             style={{
@@ -322,7 +325,7 @@ export default function Home() {
                             whileTap={{
                                 scale: 0.985,
                             }}
-                            onClick={redirectBns}
+                            onClick={() => navigate('/bns')}
                             className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
                         >
                             Learn More

@@ -200,69 +200,59 @@ function About() {
                             </button>
                         </form>
                     </div> */}
-                    <div className="bg-gradient-to-r from-blue-300 to-purple-500 h-screen flex justify-center items-center rounded-xl slide-inn">
-                        <div className="py-8 px-6 bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-xl backdrop-filter w-2/6"> {/* Changed max-w-md to max-w-xl */}
-
-                            <h1 className="text-xl font-extrabold text-center text-gray-800 mb-5">Fill below detail to Contact us</h1>
-
-                            <form onSubmit={onSubmit} className="flex flex-col">
-
-                                <div className="mb-5">
-                                    <label className="text-gray-700 font-semibold mb-2" htmlFor="name">Name</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        required
-                                        className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
-                                    />
-                                </div>
-
-                                <div className="mb-5">
-                                    <label className="text-gray-700 font-semibold mb-2" htmlFor="email">Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        required
-                                        className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
-                                    />
-                                </div>
-
-                                <div className="mb-5">
-                                    <label className="text-gray-700 font-semibold mb-2" htmlFor="phone">Phone Number</label>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        required
-                                        className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
-                                    />
-                                </div>
-
-                                <div className="mb-5">
-                                    <label className="text-gray-700 font-semibold mb-2" htmlFor="message">Message</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        required
-                                        className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
-                                        rows="4"
-                                    ></textarea>
-                                </div>
-
-                                <button
-                                    type="submit"
-                                    className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white font-semibold py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out mb-5"
-                                >
-                                    Send Message
-                                </button>
-
-                            </form>
-
-                        </div>
-                    </div>
-
+                    <div className="bg-gradient-to-r from-blue-300 to-purple-500 min-h-screen flex justify-center items-center rounded-xl slide-inn p-4">
+    <div className="py-8 px-6 bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-xl backdrop-filter w-full max-w-md"> 
+        <h1 className="text-xl font-extrabold text-center text-gray-800 mb-5">Fill below detail to Contact us</h1>
+        <form onSubmit={onSubmit} className="flex flex-col">
+            <div className="mb-5">
+                <label className="text-gray-700 font-semibold mb-2" htmlFor="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
+                />
+            </div>
+            <div className="mb-5">
+                <label className="text-gray-700 font-semibold mb-2" htmlFor="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
+                />
+            </div>
+            <div className="mb-5">
+                <label className="text-gray-700 font-semibold mb-2" htmlFor="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
+                />
+            </div>
+            <div className="mb-5">
+                <label className="text-gray-700 font-semibold mb-2" htmlFor="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                    className="bg-transparent border rounded-lg shadow border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 px-4 block w-full appearance-none leading-normal"
+                    rows="4"
+                ></textarea>
+            </div>
+            <button
+                type="submit"
+                className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white font-semibold py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out mb-5"
+            >
+                Send Message
+            </button>
+        </form>
+    </div>
+</div>
 
                 </div>
             </div>

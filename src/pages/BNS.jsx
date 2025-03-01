@@ -108,7 +108,7 @@ function BNS() {
 
 {/* this is review 1 cmt */}
 
-                {/* <div className="flex flex-col items-center justify-center  bg-[#0F172A]">
+                <div className="flex flex-col items-center justify-center  bg-[#0F172A]">
                     <a
                         className="group relative inline-block focus:outline-none focus:ring m-4"
                         href="https://bns-leap.netlify.app/ipc-search-by-keyword.html" target='blank'
@@ -135,7 +135,7 @@ function BNS() {
                             IPC to BNS Sections
                         </span>
                     </a>
-                </div> */}
+                </div>
             </div>
         </>
     )

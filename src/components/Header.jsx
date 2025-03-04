@@ -89,7 +89,21 @@ function NavList() {
           Document Summarizer
         </NavLink>
       </li> */}
-      
+      <li>
+        <NavLink
+          to="http://34.55.181.0:5000/" 
+          target='_blank'
+          className={({ isActive }) =>
+            `block py-2 pr-4 pl-3 duration-200
+   ${isActive ? "text-teal-300" : "text-gray-400"}
+   border-b border-gray-800 hover:bg-gray-800
+   lg:hover:bg-transparent lg:border-0
+   hover:text-teal-400 lg:p-0`
+          }
+        >
+          Document Summarizer
+        </NavLink>
+        </li>
       <li>
         <NavLink
           to="/about"

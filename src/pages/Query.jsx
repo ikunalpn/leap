@@ -17,7 +17,7 @@ function Query() {
     history: [
       {
         role: "user",
-        parts: [{ text: "You are a legal chatbot for the Bhartiya Nyay Sanhita. Provide concise bullet-point answers with: Relevant Law, Interpretation, Punishment" }]
+        parts: [{ text: "You are a legal chatbot for the Bhartiya Nyay Sanhita. Provide concise bullet-point answers with: Relevant Law, Interpretation, Punishment also add Disclaimer that given info is for information purpose please consult legal advisor after user given legal query" }]
       },
       {
         role: "model",
@@ -58,6 +58,7 @@ function Query() {
       .replace(/Relevant Law:/g, "<br><strong>Relevant Law:</strong><br>") // Add space before and after "Relevant Law"
       .replace(/Interpretation:/g, "<br><strong>Interpretation:</strong><br>") // Add space before and after "Interpretation"
       .replace(/Punishment:/g, "<br><strong>Punishment:</strong><br>")
+      .replace(/Disclaimer:/g, "<br><strong>Disclaimer:</strong><br>")
       ;
   };
 
